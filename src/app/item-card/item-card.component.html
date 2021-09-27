@@ -1,0 +1,25 @@
+
+    <div class="card mb-4 rounded-3 shadow-sm mx-auto justify-content-center w-25">
+       
+        <img  src="../../assets/{{items.name}}-unsplash.jpg" class="card-img-top img-fluid rounded mx-auto d-block" alt="bread-unsplash"/>
+        <div class="card-header">
+            {{items.name}}
+        </div>
+        <div class="card-body">
+            <label for="customRange2" class="form-label">Choose Quantity</label>
+            <input type="range" class="form-range" min="0" max="{{items.quantity}}" id="customRange2" value="0" name="quantity" [(ngModel)]="purchasedItem.quantity"> 
+            <p>You've Selected : {{purchasedItem.quantity}}</p>
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic-addon1">Amount to Pay</span>
+                    <input type="number" class="form-control" value="{{calculateAmount()}}" 
+                    (input) ="purchasedItem.amount = $any($event.target).value"
+                     aria-describedby="basic-addon1" disabled>
+              </div> 
+        </div>
+        <div class="card-footer">
+            <div class="d-grid gap-2  mx-auto">
+                <a routerLink="/payment" [state]="{data:purchasedItem}" (click)="purchaseStatus()" class="btn btn-primary" type="button">Proceed to Pay</a>
+            </div>
+        </div>
+    </div>
+

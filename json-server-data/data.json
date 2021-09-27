@@ -1,0 +1,157 @@
+{
+  "foodItems": [
+    {
+      "id": 2,
+      "name": "vinegar",
+      "price": 60
+    },
+    {
+      "id": 3,
+      "name": "cheese",
+      "price": 90
+    },
+    {
+      "id": 4,
+      "name": "bread",
+      "price": 50
+    },
+    {
+      "id": 5,
+      "name": "bread",
+      "price": 50
+    },
+    {
+      "id": 6,
+      "name": "cheese",
+      "price": 90
+    },
+    {
+      "id": 7,
+      "name": "cheese",
+      "price": 90
+    },
+    {
+      "id": 8,
+      "name": "cheese",
+      "price": 90
+    },
+    {
+      "id": 9,
+      "name": "cheese",
+      "price": 90
+    },
+    {
+      "id": 10,
+      "name": "cheese",
+      "price": 90
+    },
+    {
+      "id": 11,
+      "name": "vinegar",
+      "price": 60
+    }
+  ],
+  "admin": {
+    "adminPassword": "admin123",
+    "adminUserName": "admin"
+  },
+  "payments": [
+    {
+      "id": 1,
+      "cardNumber": "233543454",
+      "item_name": "coke",
+      "quantity": 3
+    },
+    {
+      "cardNumber": "23",
+      "item_name": "bread",
+      "total": 50,
+      "quantity": 1,
+      "id": 2
+    },
+    {
+      "cardNumber": "12",
+      "item_name": "bread",
+      "total": 50,
+      "quantity": 1,
+      "id": 3
+    },
+    {
+      "cardNumber": "1",
+      "item_name": "bread",
+      "total": 50,
+      "quantity": 1,
+      "id": 4
+    },
+    {
+      "cardNumber": "1",
+      "item_name": "bread",
+      "total": 50,
+      "quantity": 1,
+      "id": 5
+    },
+    {
+      "cardNumber": "1",
+      "item_name": "bread",
+      "total": 50,
+      "quantity": 1,
+      "id": 6
+    },
+    {
+      "cardNumber": "1",
+      "item_name": "bread",
+      "total": 50,
+      "quantity": 1,
+      "id": 7
+    },
+    {
+      "cardNumber": "1",
+      "item_name": "bread",
+      "total": 50,
+      "quantity": 1,
+      "id": 8
+    },
+    {
+      "cardNumber": "11",
+      "item_name": "cake",
+      "total": 50,
+      "quantity": 1,
+      "id": 9
+    },
+    {
+      "cardNumber": "1",
+      "item_name": "cake",
+      "total": 50,
+      "quantity": 1,
+      "id": 10
+    },
+    {
+      "cardNumber": "1",
+      "item_name": "cake",
+      "total": 50,
+      "quantity": 1,
+      "id": 11
+    },
+    {
+      "cardNumber": "1",
+      "item_name": "cake",
+      "total": 50,
+      "quantity": 1,
+      "id": 12
+    },
+    {
+      "cardNumber": "1",
+      "item_name": "cake",
+      "total": 50,
+      "quantity": 1,
+      "id": 13
+    },
+    {
+      "cardNumber": "2",
+      "item_name": "cake",
+      "total": 50,
+      "quantity": 1,
+      "id": 14
+    }
+  ]
+}

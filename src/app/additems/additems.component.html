@@ -1,0 +1,22 @@
+<div class="container justify-content-md-center" style = "margin-top: 50px;">
+    <div class="row justify-content-md-center">
+      <label for="items" class="text-center">Select the  food item to add:</label>
+      <select id="item" class="w-25" name="item" [(ngModel)]="selectedValue">
+        <option *ngFor="let item of foodList" [ngValue]="item.value"> 
+            {{ item.label }}
+        </option>
+      </select><br>
+      </div>
+    <div class="row justify-content-md-center">
+      <label for="quantity" class="text-center">Select the quantity food item to add:</label>
+      <select class="w-25" id="quantity" name="quantity" [(ngModel)]="selectedQuantity">
+        <option *ngFor="let quantity of quantityList" [ngValue]="quantity.value"> 
+            {{ quantity.label }}
+        </option>
+      </select><br>
+    </div>
+    <p>{{add_item_msg}}</p>
+    <div class="row justify-content-md-center">
+        <button class="w-25 btn btn-lg btn-outline-primary" type="submit" (click)="updateItems()">Save</button>
+    </div>
+</div>

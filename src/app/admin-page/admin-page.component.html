@@ -1,0 +1,56 @@
+
+<div class="container">
+  <div class="row row-cols-1 row-cols-md-3 mb-3 text-center">
+    <div class="col">
+      <div class="card mb-4 h-100 rounded-3 shadow-sm">
+        <div class="card-header py-3">
+          <h4 class="my-0 fw-normal">Change Password</h4>
+        </div>
+        <div class="card-body">
+          Click on the below button to update the password.
+          <p>Ensure that you re-enter the new password to have the new password saved in our database</p>
+        </div>
+        <div class="card-footer">
+          <button type="button" class="w-100 btn mt-auto btn-lg btn-outline-primary" (click)="onTabClick(0)">Update Password</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card h-100 mb-4 rounded-3 shadow-sm">
+        <div class="card-header py-3">
+          <h4 class="my-0 fw-normal">View Food Items</h4>
+        </div>
+        <div class="card-body h-100">
+          <p>Click on below button to view the food items in depository.</p>
+        </div>
+        <div class="card-footer">
+          <button type="button" class="w-100 btn mt-auto btn-lg btn-outline-primary" (click)="onTabClick(1)">View Items</button>
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="card mb-4 h-100 rounded-3 shadow-sm ">
+        <div class="card-header py-3">
+          <h4 class="my-0 fw-normal">Add Items</h4>
+        </div>
+        <div class="card-body">
+         <p>Click on below button to add food items into repository. The food items added can be are:</p> 
+          <ul class="list-unstyled mt-3 mb-4">
+            <li>Bread</li>
+            <li>Cake</li>
+            <li>Cheese</li>
+            <li>Vinegar</li>
+          </ul>
+        </div>
+        <div class="card-footer">
+          <button type="button" class="w-100 btn btn-lg btn-outline-primary" (click)="onTabClick(2)">Contact us</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+  <app-updatepassword  *ngIf="tabIndex === 0"></app-updatepassword>
+  <app-viewitems *ngIf="tabIndex === 1"></app-viewitems>
+  <app-additems *ngIf="tabIndex === 2"></app-additems>
+</div>

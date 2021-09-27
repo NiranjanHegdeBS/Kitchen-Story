@@ -1,0 +1,41 @@
+#searchbar{
+    border-radius: 25px;
+    border: 2px solid rgb(19, 159, 184);
+    padding: 20px; 
+    width: 200px;
+    height: 15px;
+}
+
+#myCarousel{
+    height: 100%;
+    width:100%
+}
+
+.container{
+    margin  :50px;
+    padding : 40px;
+}
+
+.input-group{
+    padding:2%;
+}
+
+.btn{
+    margin-left: 12%;
+    margin-right: 5%;
+}
+
+#One{
+    background-image:url('../../assets/1.jpg');
+    background-size:contain ;
+}
+
+#two{
+    background-image: url('../../assets/2.jpg');
+    background-size:contain ;
+}
+
+.carousel-caption{
+    background-color: rgba(63, 60, 57, 0.63);
+    color: rgb(227, 238, 238)
+}

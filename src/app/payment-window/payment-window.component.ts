@@ -4,6 +4,7 @@ import {FormBuilder, FormGroup, NgModel, Validators} from '@angular/forms';
 import { of } from 'rxjs';
 import { Transcation } from '../model/transcation';
 import { TransactionService } from '../services/transaction.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-payment-window',
@@ -14,7 +15,7 @@ export class PaymentWindowComponent {
 
   
 
-  constructor(private _formBuilder : FormBuilder, private _pay : TransactionService) { }
+  constructor(private _formBuilder : FormBuilder, private _pay : TransactionService, private _route : Router) { }
   submitted = false;
   paymentForm!: FormGroup;
 
@@ -94,10 +95,11 @@ export class PaymentWindowComponent {
     this.transcation.cardNumber = this.paymentForm.getRawValue().cardNumber;
     if(this.paymentForm.invalid) return;
     this._pay.addPayments(this.transcation.item_name,this.transcation.quantity,this.transcation).subscribe(res=>{
-      console.log(res);
-      
+      console.log(res);  
     })
     this.resetForm();
+    alert("Payment Successful. Navigating back to home page");
+    this._route.navigate(['/home'])
   }
   
 }

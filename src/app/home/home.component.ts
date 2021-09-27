@@ -30,6 +30,9 @@ export class HomeComponent implements OnInit {
         if(this.itemExists){
           this._router.navigate([`/items/${this.name.toLowerCase()}`])
         }
+        else{
+          alert("Sorry, food item doesn't exist!")
+        }
       })
   }
 }

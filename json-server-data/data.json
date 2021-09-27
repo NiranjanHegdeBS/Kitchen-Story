@@ -63,21 +63,21 @@
       "quantity": 3
     },
     {
-      "cardNumber": "23",
+      "cardNumber": "233245678923",
       "item_name": "bread",
       "total": 50,
       "quantity": 1,
       "id": 2
     },
     {
-      "cardNumber": "12",
+      "cardNumber": "120990873410",
       "item_name": "bread",
       "total": 50,
       "quantity": 1,
       "id": 3
     },
     {
-      "cardNumber": "1",
+      "cardNumber": "239098712981",
       "item_name": "bread",
       "total": 50,
       "quantity": 1,
@@ -91,67 +91,18 @@
       "id": 5
     },
     {
-      "cardNumber": "1",
-      "item_name": "bread",
-      "total": 50,
-      "quantity": 1,
-      "id": 6
-    },
-    {
-      "cardNumber": "1",
-      "item_name": "bread",
-      "total": 50,
-      "quantity": 1,
-      "id": 7
-    },
-    {
-      "cardNumber": "1",
-      "item_name": "bread",
-      "total": 50,
-      "quantity": 1,
-      "id": 8
-    },
-    {
-      "cardNumber": "11",
+      "cardNumber": "999976890911",
       "item_name": "cake",
       "total": 50,
       "quantity": 1,
       "id": 9
     },
     {
-      "cardNumber": "1",
-      "item_name": "cake",
-      "total": 50,
-      "quantity": 1,
-      "id": 10
-    },
-    {
-      "cardNumber": "1",
-      "item_name": "cake",
-      "total": 50,
-      "quantity": 1,
-      "id": 11
-    },
-    {
-      "cardNumber": "1",
+      "cardNumber": "232561280309",
       "item_name": "cake",
       "total": 50,
       "quantity": 1,
       "id": 12
-    },
-    {
-      "cardNumber": "1",
-      "item_name": "cake",
-      "total": 50,
-      "quantity": 1,
-      "id": 13
-    },
-    {
-      "cardNumber": "2",
-      "item_name": "cake",
-      "total": 50,
-      "quantity": 1,
-      "id": 14
     }
   ]
 }

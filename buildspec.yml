@@ -1,7 +1,7 @@
 version: 0.2
 env:
   variables:
-    APP_NAME: "AWS-demo"
+    APP_NAME: "Kitchen-Story"
 phases:
   install:
     runtime-versions:

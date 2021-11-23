@@ -16,6 +16,7 @@ phases:
   post_build:
     commands:
       - echo build process finished, we should uplload to S3 now
-      - cd dist
+      - cd dist/ecommerceportal
       - ls -la
+      - - aws s3 sync . s3://my-awsome-bucket-of-files-demo --delete
       

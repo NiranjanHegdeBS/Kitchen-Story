@@ -21,15 +21,15 @@ export class AdminLoginComponent implements OnInit {
   admin:any;
 
   ngOnInit(): void {
-    this.adminCredentials.adminPassword = "";
-    this.adminCredentials.adminUserName = "";
+    this.adminCredentials.AdminPassword = "";
+    this.adminCredentials.AdminName = "";
   }
 
   
   adminLogin(){
     this._admin.getAdmin().subscribe(credentials=>{
-      if(credentials.adminPassword == this.adminCredentials.adminPassword && 
-        credentials.adminUserName == this.adminCredentials.adminUserName){
+      if(credentials.AdminPassword == this.adminCredentials.AdminPassword && 
+        credentials.AdminName == this.adminCredentials.AdminName){
           this._auth.login();
           this._router.navigate(['/admin-page'])
         }

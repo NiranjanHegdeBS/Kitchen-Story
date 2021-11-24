@@ -12,7 +12,7 @@ export class AdminService {
   constructor(private _httpClient : HttpClient, private _router:Router) { }
 
   getAdmin() : Observable<Admin>{
-    return this._httpClient.get<Admin>('http://localhost:3000/admin');
+    return this._httpClient.get<Admin>('https://cz9kqenr6c.execute-api.us-east-2.amazonaws.com/test/getAdmin');
   }
 
   updateAdmin(admin : Admin) : Observable<Admin>{
